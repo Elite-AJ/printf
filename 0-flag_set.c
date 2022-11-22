@@ -14,7 +14,7 @@ int get_flags(const char *format, int *i)
 
 	int j, curr_i;
 	int flags = 0;
-	const char FLAGS_CH[] = {'-', '+','0', '#',' ', '\0'};
+	const char FLAGS_CH[] = {'-', '+', '0', '#', ' ', '\0'};
 	const int FLAGS_AR[] = {F_MINUS, F_PLUS, F_ZERO, F_HASH, F_SPACE, 0};
 
 	for (curr_i = *i + 1; format[curr_i] != '\0'; curr_i++)
@@ -53,7 +53,7 @@ int get_precision(const char *format, int *i, va_list list)
 	if (format[curr_i] != '.')
 		return (precision);
 
-	precision = 0; 
+	precision = 0;
 
 	for (curr_i += 1; format[curr_i] != '\0'; curr_i++)
 	{
@@ -73,7 +73,7 @@ int get_precision(const char *format, int *i, va_list list)
 			break;
 	}
 
-	*i = curr_i -1;
+	*i = curr_i - 1;
 
 	return (precision);
 
