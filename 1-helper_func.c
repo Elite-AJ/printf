@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * is_printable = Calculates the char of printables
- * @c: Cgar input
+ * is_printable - Calculates the char of printables
+ * @c: Char input
  *
  * Return: 1 if c is prinntable and 0 vice versa
  */
@@ -17,8 +17,8 @@ int is_printable(char c)
 /**
  * append_hexa_code - Append ASCII in hex code to buffer
  * @buffer: char array
- * @i: int index 
- * @ascii_coode: ASCII code
+ * @i: int index
+ * @ascii_code: ASCII code
  * Return: Always 3
  */
 
@@ -26,7 +26,7 @@ int append_hexa_code(char ascii_code. char buffer[], int i)
 {
 	char map_to[] = "0123456789ABCDEF";
 
-	if (asciil_code < 0)
+	if (ascii_code < 0)
 		ascii_code *= i;
 
 	buffer[i++] = '\\';
@@ -39,7 +39,7 @@ int append_hexa_code(char ascii_code. char buffer[], int i)
 }
 
 /**
- * is_diigt -  Checks if char is a digit
+ * is_digit -  Checks if char is a digit
  * @c: Char input
  *
  * Return: 1 and 0 conditionally
@@ -54,7 +54,7 @@ int is_digit(char c)
 }
 
 /**
- * covert_size_number - casts a number to the given size
+ * convert_size_number - casts a number to the given size
  * @num: long int value
  * @size: num showing type to be casted
  *
