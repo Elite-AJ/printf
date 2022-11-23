@@ -112,7 +112,7 @@ int write_num(int ind, char buffer[],
 		for (i = 1; i < width - length + 1; i++)
 			buffer[i] = padd;
 		buffer[i] = '\0';
-		if (flags & F_MINUS && padd == ' ')/* Asign extra char to left side of the buffer */
+		if (flags & F_MINUS && padd == ' ')/* Asign extra char to left buffer */
 		{
 			if (extra_c)
 				buffer[--ind] = extra_c;
@@ -124,7 +124,7 @@ int write_num(int ind, char buffer[],
 				buffer[--ind] = extra_c;
 			return (write(1, &buffer[1], i - 1) + write(1, &buffer[ind], length));
 		}
-		else if (!(flags & F_MINUS) && padd == '0')/* extra char to left side of padd */
+		else if (!(flags & F_MINUS) && padd == '0')/* extra char to left padd */
 		{
 			if (extra_c)
 				buffer[--padd_start] = extra_c;
