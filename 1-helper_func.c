@@ -22,7 +22,7 @@ int is_printable(char c)
  * Return: Always 3
  */
 
-int append_hexa_code(char ascii_code. char buffer[], int i)
+int append_hexa_code(char ascii_code, char buffer[], int i)
 {
 	char map_to[] = "0123456789ABCDEF";
 
@@ -39,7 +39,7 @@ int append_hexa_code(char ascii_code. char buffer[], int i)
 }
 
 /**
- * is_digit -  Checks if char is a digit
+ * is_digit - Checks if char is a digit
  * @c: Char input
  *
  * Return: 1 and 0 conditionally
